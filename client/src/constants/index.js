@@ -7,15 +7,15 @@ export const navLinks = [
   },
   {
     id: "features",
-    title: "Features",
+    title: "Track Item",
   },
   {
-    id: "product",
-    title: "Product",
+    id: "shipping",
+    title: "Ship package",
   },
   {
     id: "clients",
-    title: "Clients",
+    title: "Testimonals",
   },
 ];
 
@@ -47,7 +47,7 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+      "The reliability and timeliness of their deliveries have been a game- changer for my company.Not only do they handle my packages with care, but their customer service is also top - notch.",
     name: "Herman Jensen",
     title: "Founder & Leader",
     img: people01,
@@ -55,17 +55,17 @@ export const feedback = [
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
+      "Their attention to detail and commitment to customer satisfaction are truly commendable",
     name: "Steve Mark",
-    title: "Founder & Leader",
+    title: "Customer",
     img: people02,
   },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
+      "Their delivery speed is unparalleled, and I've never experienced any issues with damaged items. ",
     name: "Kenn Gallagher",
-    title: "Founder & Leader",
+    title: "CEO",
     img: people03,
   },
 ];
@@ -74,7 +74,7 @@ export const stats = [
   {
     id: "stats-1",
     title: "User Active",
-    value: "3800+",
+    value: "7800+",
   },
   {
     id: "stats-2",
@@ -84,7 +84,7 @@ export const stats = [
   {
     id: "stats-3",
     title: "Transaction",
-    value: "$230M+",
+    value: "$23M+",
   },
 ];
 

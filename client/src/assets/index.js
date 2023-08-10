@@ -23,7 +23,8 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
-import billi from "./billi.png"
+import download from "./download.svg";
+import hoobank from "./hoobank.svg"
 
 export {
   airbnb,
@@ -51,5 +52,6 @@ export {
   people01,
   people02,
   people03,
-  billi,
+  download,
+  hoobank
 };

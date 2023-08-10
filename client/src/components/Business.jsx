@@ -22,8 +22,7 @@ const Business = () =>  (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        You create a package, <br className="sm:block hidden" /> we’ll handle
-        the shipping and tracking.
+        TRACK <br className="sm:block hidden" /> YOUR PACKAGE
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         We boast of a track record that includes fast and reliable service, efficient tracking and communication systems, 
@@ -31,7 +30,7 @@ const Business = () =>  (
         and a commitment to maintaining the integrity and security of the items they transport. 
       </p>
 
-      <Button styles={`mt-10`} />
+      <Button styles={`mt-4`} />
     </div>
 
     <div className={`${layout.sectionImg} flex-col`}>
