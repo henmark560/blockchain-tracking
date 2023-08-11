@@ -7,7 +7,7 @@ async function run() {
   // a valid username and password! Note that in a production environment,
   // you do not want to store your password in plain-text here.
   const uri =
-  "mongodb+srv://admin:iOJMzZBrBijeh2LY@cluster0.7bqfwwu.mongodb.net/?retryWrites=true&w=majority";
+    "mongodb+srv://admin:iOJMzZBrBijeh2LY@cluster0.7bqfwwu.mongodb.net/?retryWrites=true&w=majority";
 
   // The MongoClient is the object that references the connection to our
   // datastore (Atlas, for example)
@@ -37,25 +37,29 @@ async function run() {
    * insert them all in one call with collection.insertMany().
    */
 
-  const package = 
-    {
-      id: "pckg-7500789",
-      receiver: "Jan Cox",
-      cell: "",
-      email: "jeanycox2019@gmail.com",
-      sender: "Mark Hendrix",
-      from: "New York, USA",
-      destination: "Australia",
-      deliveryInDays: 35,
-      package: "undisclosed",
-      category: 'precious',    
-    };
+  const package = {
+    id: "pckg-7500789",
+    receiver: "Jan Cox",
+    cell: "",
+    email: "jeanycox2019@gmail.com",
+    sender: "Mark Hendrix",
+    from: "New York, USA",
+    destination: "Australia",
+    datelisted: "27/08/1023",
+    deliveryInDays: 35,
+    package: "undisclosed",
+    category: "precious",
+  };
 
   try {
     const insertManyResult = await collection.insertOne(package);
-    console.log(`${insertManyResult.insertedCount} documents successfully inserted.\n`);
+    console.log(
+      `${insertManyResult.insertedCount} documents successfully inserted.\n`
+    );
   } catch (err) {
-    console.error(`Something went wrong trying to insert the new documents: ${err}\n`);
+    console.error(
+      `Something went wrong trying to insert the new documents: ${err}\n`
+    );
   }
 
   /*
@@ -67,8 +71,6 @@ async function run() {
    * filters, and is used here to show its most basic use.
    */
 
-
-
   // We can also find a single document. Let's find the first document
   // that has the string "potato" in the ingredients list.
   const findOneQuery = { receiver: "Jan Cox" };
@@ -76,9 +78,15 @@ async function run() {
   try {
     const findOneResult = await collection.findOne(findOneQuery);
     if (findOneResult === null) {
-      console.log("Couldn't find any package that contain 'Jan Cox' as an name.\n");
+      console.log(
+        "Couldn't find any package that contain 'Jan Cox' as an name.\n"
+      );
     } else {
-      console.log(`Found a recipe with 'potato' as an ingredient:\n${JSON.stringify(findOneResult)}\n`);
+      console.log(
+        `Found a recipe with 'potato' as an ingredient:\n${JSON.stringify(
+          findOneResult
+        )}\n`
+      );
     }
   } catch (err) {
     console.error(`Something went wrong trying to find one document: ${err}\n`);
@@ -93,7 +101,6 @@ async function run() {
    *      the recipes.
    */
 
-
   // const deleteQuery = { receiver: "Jan Cox" };
   // try {
   //   const deleteResult = await collection.deleteOne(deleteQuery);
@@ -102,7 +109,7 @@ async function run() {
   //   console.error(`Something went wrong trying to delete documents: ${err}\n`);
   // }
 
-// Make sure to call close() on your client to perform cleanup operations
-   await client.close();
- }
+  // Make sure to call close() on your client to perform cleanup operations
+  await client.close();
+}
 run().catch(console.dir);
