@@ -101,13 +101,13 @@ async function run() {
    *      the recipes.
    */
 
-  // const deleteQuery = { receiver: "Jan Cox" };
-  // try {
-  //   const deleteResult = await collection.deleteOne(deleteQuery);
-  //   console.log(`Deleted ${deleteResult.deletedCount} documents\n`);
-  // } catch (err) {
-  //   console.error(`Something went wrong trying to delete documents: ${err}\n`);
-  // }
+  const deleteQuery = { receiver: "Jan Cox" };
+  try {
+    const deleteResult = await collection.deleteOne(deleteQuery);
+    console.log(`Deleted ${deleteResult.deletedCount} documents\n`);
+  } catch (err) {
+    console.error(`Something went wrong trying to delete documents: ${err}\n`);
+  }
 
   // Make sure to call close() on your client to perform cleanup operations
   await client.close();
