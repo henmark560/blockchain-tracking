@@ -76,10 +76,10 @@ async function insertPackage(_id, _receiver, _cell, _email, _sender, _from,
   try {
     const insertManyResult = await collection.insertOne(package);
     console.log(`${package.id} successfully inserted.\n`);
+    await client.close();
     return true;
   } catch (err) {
     console.error(`Something went wrong trying to insert the new documents: ${err}\n`);
-    return false;
   }
   await client.close();
 
