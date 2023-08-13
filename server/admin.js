@@ -15,8 +15,8 @@ async function run() {
   const collection = database.collection(collectionName);
 
   const package = {
-    username: "root",
-    password: "@iamroot",
+    username: process.env.username,
+    password: process.env.password,
   };
 
   try {
