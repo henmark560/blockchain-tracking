@@ -3,6 +3,8 @@ const cors =  require('cors');
 const { MongoClient } = require("mongodb");
 const bodyParser = require('body-parser');
 const UserRouter = express.Router();
+require('dotenv').config()
+
 
 
 const app = express()
@@ -12,8 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 async function getPackage(_id){
-    const uri =
-        "mongodb+srv://admin:iOJMzZBrBijeh2LY@cluster0.7bqfwwu.mongodb.net/?retryWrites=true&w=majority";
+    const uri = process.env.uri;
     
   const client = new MongoClient(uri);
   await client.connect();
@@ -46,7 +47,7 @@ async function getPackage(_id){
 }   
 
 async function login(username,password) {
-  const uri ="mongodb+srv://admin:iOJMzZBrBijeh2LY@cluster0.7bqfwwu.mongodb.net/?retryWrites=true&w=majority";
+  const uri = process.env.uri;
   const client = new MongoClient(uri);
   await client.connect();
   const dbName = "Users";
@@ -58,7 +59,6 @@ async function login(username,password) {
   try {
     const findOneResult = await collection.findOne(findOneQuery);
     if (findOneResult !== null) {
-      console.log(findOneResult)
       if (findOneResult.password === password) {
         await client.close();
         return true;
@@ -83,7 +83,7 @@ async function login(username,password) {
 async function insertPackage(_id, _receiver, _cell, _email, _sender, _from,
   _destination, _datelisted, _deliverydate,_item,_category) {
   const uri =
-    "mongodb+srv://admin:iOJMzZBrBijeh2LY@cluster0.7bqfwwu.mongodb.net/?retryWrites=true&w=majority";
+    process.env.uri;
   
   const client = new MongoClient(uri);  
   await client.connect();
@@ -139,9 +139,12 @@ app.post('/append',(req,res)=>{
       }
   } insertpackage()
 })
-app.post("/hello", (req, res) => {
-  console.log(req.body)
-  res.send("hello world")
+app.post("/login", (req, res) => {
+  async function approve() {
+    const { username, password } = req.body;
+    const response = await login(username, password)
+    res.send(response);
+  }approve()
 })
 
 

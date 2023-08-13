@@ -1,4 +1,5 @@
 const { MongoClient } = require("mongodb");
+require('dotenv').config()
 
 async function run() {
   // TODO:
@@ -7,7 +8,7 @@ async function run() {
   // a valid username and password! Note that in a production environment,
   // you do not want to store your password in plain-text here.
   const uri =
-    "mongodb+srv://admin:iOJMzZBrBijeh2LY@cluster0.7bqfwwu.mongodb.net/?retryWrites=true&w=majority";
+    process.env.uri;
 
   // The MongoClient is the object that references the connection to our
   // datastore (Atlas, for example)

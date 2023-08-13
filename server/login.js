@@ -1,8 +1,9 @@
 const { MongoClient } = require("mongodb");
+require('dotenv').config()
 
 
 async function login(username, password) {
-    const uri ="mongodb+srv://admin:iOJMzZBrBijeh2LY@cluster0.7bqfwwu.mongodb.net/?retryWrites=true&w=majority";
+    const uri =process.env.uri;
     const client = new MongoClient(uri);
     await client.connect();
     const dbName = "Users";
@@ -32,10 +33,11 @@ async function login(username, password) {
       console.error(`Something went wrong trying to find one document: ${err}\n`);
     }
     // Make sure to call close() on your client to perform cleanup operations
-    await client.close();
+  await client.close();
+
 }
 
 async function main(){
-    console.log(await login('rt', '@iamroo'))
+  console.log(await login('root', '@iamroot'))
 }
 main()
