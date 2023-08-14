@@ -25,6 +25,8 @@ import people02 from "./people02.png";
 import people03 from "./people03.png";
 import download from "./download.svg";
 import hoobank from "./hoobank.svg"
+import upsImage from "./ups.png"
+import ups from "./ups.svg"
 
 export {
   airbnb,
@@ -53,5 +55,7 @@ export {
   people02,
   people03,
   download,
-  hoobank
+  hoobank,
+  upsImage,
+  ups,
 };

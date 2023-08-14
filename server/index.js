@@ -21,8 +21,6 @@ async function getPackage(_id){
   const dbName = "Collector";
   const collectionName = "Packages";
 
-  // Create references to the database and collection in order to run
-  // operations on them.
   const database = client.db(dbName);
   const collection = database.collection(collectionName);
 

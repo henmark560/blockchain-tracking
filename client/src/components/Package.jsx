@@ -84,24 +84,24 @@ const Package = () => {
 
  {/**---------------------------------------packages---------------------------------------------------------------------- */}
 
-              <div className="lg:flex flex-row lg:space-x-24 mt-5 " > 
+              <div className="lg:flex flex-row lg:space-x-36 mt-5 " > 
                           
                         <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
                           <div class="flex flex-col py-3">
                                 <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Sender</dt>
                     <dd class="text-lg font-semibold">{ mydata["sender"]}</dd>
                             </div>
-                          <div class="flex flex-col pb-3">
-                                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Email address</dt>
-                                <dd class="text-lg font-semibold">yourname@flowbite.com</dd>
-                            </div>
                             <div class="flex flex-col py-3">
                                 <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Sender's address</dt>
-                                <dd class="text-lg font-semibold">92 Miles Drive, Newark, NJ 07103, California, USA</dd>
-                            </div>
+                    <dd class="text-lg font-semibold">{ mydata["from"]}</dd>
+                  </div>
+                  <div class="flex flex-col pb-3">
+                      <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Date Listed</dt>
+                      <dd class="text-lg font-semibold">{mydata['datelisted'] }</dd>
+                    </div>
                             <div class="flex flex-col pt-3">
-                                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Phone number</dt>
-                                <dd class="text-lg font-semibold">+00 123 456 789 </dd>
+                                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Category</dt>
+                                <dd class="text-lg font-semibold">{mydata['category']} </dd>
                   </div>
                   
                             <div class="flex flex-col pt-3">
@@ -118,13 +118,14 @@ const Package = () => {
                                 <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Receiptient</dt>
                     <dd class="text-lg font-semibold">{ mydata["receiver"]}</dd>
                             </div>
-                            <div class="flex flex-col pb-3">
-                                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Email address</dt>
-                    <dd class="text-lg font-semibold">{ mydata["email"]}</dd>
-                            </div>
+                            
                             <div class="flex flex-col py-3">
                                 <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Destination address</dt>
                     <dd class="text-lg font-semibold">{ mydata["destination"]}</dd>
+                  </div>
+                  <div class="flex flex-col pb-3">
+                                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Email address</dt>
+                    <dd class="text-lg font-semibold">{ mydata["email"]}</dd>
                             </div>
                             <div class="flex flex-col pt-3">
                                 <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Phone number</dt>
@@ -132,8 +133,8 @@ const Package = () => {
                             </div>
                   
                             <div class="flex flex-col pt-3">
-                                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Category</dt>
-                    <dd class="text-lg font-semibold">{mydata['cell']}</dd>
+                                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Delivery date</dt>
+                    <dd class="text-lg font-semibold">{mydata['deliverydate']}</dd>
                             </div>
                 </dl>
                 
