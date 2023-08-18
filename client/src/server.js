@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const server = axios.create({
-  baseURL: "https://courier-server.onrender.com:8000",
+  baseURL: "https://courier-server.onrender.com",
 });
 
 export default server;
