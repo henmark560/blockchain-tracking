@@ -13,8 +13,8 @@ const Navbar = () => {
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <div>
-        <img src={upsImage} alt="hoobank" className="w-[48px] h-[48px]" />
-        { /**<img src={download} alt="hoobank" className="w-[124px] h-[32px]" /> **/ }
+        {/** <img src={upsImage} alt="hoobank" className="w-[48px] h-[48px]" /> **/}
+        { /** <img src={download} alt="hoobank" className="w-[124px] h-[32px]" /> **/ }
       </div>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
