@@ -116,25 +116,25 @@ const Package = () => {
                 <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700 xxs:mt-1">
                             <div class="flex flex-col py-3">
                                 <dt class="mb-1 text-white md:text-lg dark:text-gray-400">Receiptient</dt>
-                    <dd class="text-lg font-semibold">{ mydata["receiver"]}</dd>
+                    <dd class="text-lg text-white font-semibold">{ mydata["receiver"]}</dd>
                             </div>
                             
                             <div class="flex flex-col py-3">
                                 <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Destination address</dt>
-                    <dd class="text-lg font-semibold">{ mydata["destination"]}</dd>
+                    <dd class="text-lg text-white font-semibold">{ mydata["destination"]}</dd>
                   </div>
                   <div class="flex flex-col pb-3">
                                 <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Email address</dt>
-                    <dd class="text-lg font-semibold">{ mydata["email"]}</dd>
+                    <dd class="text-lg text-white font-semibold">{ mydata["email"]}</dd>
                             </div>
                             <div class="flex flex-col pt-3">
                                 <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Phone number</dt>
-                    <dd class="text-lg font-semibold">{ mydata['cell']}</dd>
+                    <dd class="text-lg text-white font-semibold">{ mydata['cell']}</dd>
                             </div>
                   
                             <div class="flex flex-col pt-3">
                                 <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Delivery date</dt>
-                    <dd class="text-lg font-semibold">{mydata['deliverydate']}</dd>
+                    <dd class="text-lg text-white font-semibold">{mydata['deliverydate']}</dd>
                             </div>
                 </dl>
                 
