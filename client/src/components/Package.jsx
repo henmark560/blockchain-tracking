@@ -88,25 +88,25 @@ const Package = () => {
                           
                         <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
                           <div class="flex flex-col py-3">
-                                <dt class="mb-1 text-white md:text-lg dark:text-gray-400">Sender</dt>
-                    <dd class="text-lg font-semibold">{ mydata["sender"]}</dd>
+                                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Sender</dt>
+                    <dd class="text-lg text-white font-semibold">{ mydata["sender"]}</dd>
                             </div>
                             <div class="flex flex-col py-3">
                                 <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Sender's address</dt>
-                    <dd class="text-lg font-semibold">{ mydata["from"]}</dd>
+                    <dd class="text-lg text-white font-semibold">{ mydata["from"]}</dd>
                   </div>
                   <div class="flex flex-col pb-3">
-                      <dt class="mb-1 text-white md:text-lg dark:text-gray-400">Date Listed</dt>
-                      <dd class="text-lg font-semibold">{mydata['datelisted'] }</dd>
+                      <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Date Listed</dt>
+                      <dd class="text-lg text-white font-semibold">{mydata['datelisted'] }</dd>
                     </div>
                             <div class="flex flex-col pt-3">
-                                <dt class="mb-1 text-white md:text-lg dark:text-gray-400">Category</dt>
-                                <dd class="text-lg font-semibold">{mydata['category']} </dd>
+                                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Category</dt>
+                                <dd class="text-lg text-white font-semibold">{mydata['category']} </dd>
                   </div>
                   
                             <div class="flex flex-col pt-3">
-                                <dt class="mb-1 text-white md:text-lg dark:text-gray-400" >Package Status</dt>
-                                <dd class="text-lg font-semibold">Enroute</dd>
+                                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400" >Package Status</dt>
+                                <dd class="text-lg text-white font-semibold">Enroute</dd>
                             </div>
                         </dl>
                 
