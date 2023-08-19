@@ -88,7 +88,7 @@ const Package = () => {
                           
                         <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
                           <div class="flex flex-col py-3">
-                                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Sender</dt>
+                                <dt class="mb-1 text-white md:text-lg dark:text-gray-400">Sender</dt>
                     <dd class="text-lg font-semibold">{ mydata["sender"]}</dd>
                             </div>
                             <div class="flex flex-col py-3">
@@ -96,16 +96,16 @@ const Package = () => {
                     <dd class="text-lg font-semibold">{ mydata["from"]}</dd>
                   </div>
                   <div class="flex flex-col pb-3">
-                      <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Date Listed</dt>
+                      <dt class="mb-1 text-white md:text-lg dark:text-gray-400">Date Listed</dt>
                       <dd class="text-lg font-semibold">{mydata['datelisted'] }</dd>
                     </div>
                             <div class="flex flex-col pt-3">
-                                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Category</dt>
+                                <dt class="mb-1 text-white md:text-lg dark:text-gray-400">Category</dt>
                                 <dd class="text-lg font-semibold">{mydata['category']} </dd>
                   </div>
                   
                             <div class="flex flex-col pt-3">
-                                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400" >Package Status</dt>
+                                <dt class="mb-1 text-white md:text-lg dark:text-gray-400" >Package Status</dt>
                                 <dd class="text-lg font-semibold">Enroute</dd>
                             </div>
                         </dl>
@@ -115,7 +115,7 @@ const Package = () => {
 
                 <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700 xxs:mt-1">
                             <div class="flex flex-col py-3">
-                                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Receiptient</dt>
+                                <dt class="mb-1 text-white md:text-lg dark:text-gray-400">Receiptient</dt>
                     <dd class="text-lg font-semibold">{ mydata["receiver"]}</dd>
                             </div>
                             
